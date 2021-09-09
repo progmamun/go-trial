@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/big"
 
-	// "crypto/rand"
-	"time"
+	// "math/rand"
+
+	"crypto/rand"
 )
 
 func main() {
@@ -13,6 +14,10 @@ func main() {
 
 	//random numbar
 	//rand.seed(7)
-	rand.Seed(time.Now().UnixNano())
-	fmt.Println(rand.Intn(10) + 1)
+	// rand.Seed(time.Now().UnixNano())
+	// fmt.Println(rand.Intn(10) + 1)
+
+	//random from crypto
+	myRandomNum, _ := rand.Int(rand.Reader, big.NewInt(10))
+	fmt.Println(myRandomNum)
 }
