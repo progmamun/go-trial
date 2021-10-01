@@ -13,6 +13,7 @@ func main() {
 	myNumber := 23
 
 	var ptr = &myNumber
+
 	//ref. mean &
 
 	fmt.Println("value of actual pointer is ", ptr)
