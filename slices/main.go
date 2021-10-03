@@ -39,5 +39,6 @@ func main() {
 	fmt.Println(courses)
 	var index int = 2
 	courses = append(courses[:index], courses[index+1:]...)
+	//[index+1:] starting 3 and 3dots meaning continuous
 	fmt.Println(courses)
 }
