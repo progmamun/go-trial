@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println("Welcome to function in golang")
-	// greeter()
+	greeter()
 
 	result := adder(3, 5)
 
@@ -16,19 +16,20 @@ func main() {
 
 }
 
-func adder(valOne int, ValTwo int) int {
+func adder(valOne int, valTwo int) int {
 	return valOne + valTwo
 }
 
 func proAdder(values ...int) (int, string) {
 	total := 0
 
-	for _, val := range values{
+	for _, val := range values {
 		total += val
 	}
-	
-	return total, "Hi Pro result function"
 
-	// func greeter() {
-// 	fmt.Println("Assalamualikum from golang")
-// }
+	return total, "Hi Pro result function"
+}
+
+func greeter() {
+	fmt.Println("Assalamualikum from golang")
+}
