@@ -31,5 +31,23 @@ func main() {
 	default:
 		fmt.Println("What was that!")
 	}
+	// method 2
+	/*
+		switch tier { // switch statement
+			case 1: // case statement
+				fmt.Println("T-shirt")
+				if age < 18 {
+					break // exits the switch block
+				}
+				fallthrough // executes the next case
+			case 2:
+				fmt.Println("Mug")
+				fallthrough // executes the next case
+			case 3:
+				fmt.Println("Sticker pack")
+			default: // executed if no case is satisfied
+				fmt.Println("no reward")
+			}
+	*/
 
 }
